@@ -17,9 +17,6 @@ Template::body($contentMenu);
 
 $urlCheck = SitePreferences::$lang != SitePreferences::$langMain ? uriparts(2) : uriparts(1);
 
-echo "Hello";
-
-
 if (count(uriparts()) === 2 && uriparts(1) === '') {
 	$tartalom = new fooldal();
 } else {
